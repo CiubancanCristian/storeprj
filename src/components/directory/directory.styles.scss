@@ -1,6 +1,13 @@
-.directory-menu {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.slide-container {
+  margin: auto;
 }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height:84vh;
+  width:100%;
+}
+

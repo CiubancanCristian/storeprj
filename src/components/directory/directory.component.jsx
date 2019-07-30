@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import MenuItem from '../menu-item/menu-item.component';
+import MenuItem from "../menu-item/menu-item.component";
+import { Slide } from "react-slideshow-image";
 
-import './directory.styles.scss';
+import "./directory.styles.scss";
 
 class Directory extends React.Component {
   constructor() {
@@ -11,48 +12,70 @@ class Directory extends React.Component {
     this.state = {
       sections: [
         {
-          title: 'hats',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          title: "hats",
+          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
           id: 1,
-          linkUrl: 'hats'
+          linkUrl: "hats"
         },
         {
-          title: 'jackets',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          title: "jackets",
+          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
           id: 2,
-          linkUrl: ''
+          linkUrl: ""
         },
         {
-          title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          title: "sneakers",
+          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
           id: 3,
-          linkUrl: ''
+          linkUrl: ""
         },
         {
-          title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-          size: 'large',
+          title: "womens",
+          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+          size: "large",
           id: 4,
-          linkUrl: ''
+          linkUrl: ""
         },
         {
-          title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-          size: 'large',
+          title: "mens",
+          imageUrl: "https://i.ibb.co/cvpntL1/hats.png",
+          size: "large",
           id: 5,
-          linkUrl: ''
+          linkUrl: ""
         }
       ]
     };
   }
 
   render() {
+    const slideImages = [
+      "https://www.next.co.uk/nxtcms/resource/blob/1057302/e66bf0dfa5c5cb85c8850166984ef0af/g23-menshp-data.gif",
+      "https://i.ibb.co/cvpntL1/mens.png",
+      "https://www.bodenimages.com/productimages/productlarge/19waut_w0093_dyl_w01.jpg"
+    ];
+
+    const properties = {
+      duration: 5000,
+      transitionDuration: 1000,
+      infinite: true,
+      indicators: true,
+      arrows: true,
+      onChange: (oldIndex, newIndex) => {
+        console.log(`slide transition from ${oldIndex} to ${newIndex}`);
+      }
+    };
     return (
-      <div className='directory-menu'>
-        {this.state.sections.map(({ id, ...otherSectionProps }) => (
-          <MenuItem key={id} {...otherSectionProps} />
-        ))}
-      </div>
+      <Slide {...properties}>
+        <div className="each-slide">
+          <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
+        </div>
+        <div className="each-slide">
+          <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
+        </div>
+        <div className="each-slide">
+          <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
+        </div>
+      </Slide>
     );
   }
 }

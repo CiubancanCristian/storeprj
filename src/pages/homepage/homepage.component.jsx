@@ -1,18 +1,13 @@
-import React from "react";
+import React from 'react';
 
-import background from "../../assets/farrod.mp4";
+import Directory from '../../components/directory/directory.component';
 
-import "./homepage.styles.scss";
+import './homepage.styles.scss';
 
 const HomePage = () => (
-	<div className="fullscreen-bg">
-		<video className="fullscreen-bg__video" muted loop autoPlay playsinline>
-			<source
-				src={background}
-				type="video/mp4"
-			/>
-		</video>
-	</div>
+  <div className=''>
+    <Directory />
+  </div>
 );
 
 export default HomePage;
