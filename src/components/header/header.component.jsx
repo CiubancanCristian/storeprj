@@ -22,8 +22,7 @@ const Header = ({ currentUser, isVisible, hidden }) => (
         "header--hidden": !isVisible
       })}
     >
-    <div className='menu-button '>MENU</div>
-      {" "}
+      <div className="menu-button ">MENU</div>{" "}
       <div className="options">
         <Link className="option" to="/shop">
           SHOP
@@ -41,13 +40,13 @@ const Header = ({ currentUser, isVisible, hidden }) => (
           </Link>
         )}
       </div>
-      <Link className="logo-container" to="/">
-        <Farrod className='logo'/>
-      </Link>
-      <div className="search">
-        <img className="pr3" alt="search" src={Magnifier} />
-        <CartIcon />
-      </div>
+        <Link className="logo-container" to="/">
+          <Farrod className="logo" />
+        </Link>
+        <div className="search">
+          <img className="" alt="search" src={Magnifier} />
+          <CartIcon />
+        </div>
       {hidden ? null : <CartDropdown />}
     </div>
   </div>

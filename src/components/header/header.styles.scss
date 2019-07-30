@@ -13,6 +13,9 @@
   justify-content: center;
   margin-bottom: 25px;
   z-index: 1;
+  .menu-button {
+    display: none;
+  }
 
   .logo-container {
     display: flex;
@@ -55,7 +58,7 @@
     font-family: "Quicksand", sans-serif;
     background-color: black;
     height: 70px;
-    width: 100%;
+    width: 100vw;
     color: white;
     transition: top 1s;
     position: fixed;
@@ -72,7 +75,6 @@
       justify-content: center;
       position: relative;
       width: 50vw;
-      padding: 0px 25px;
     }
 
     .menu-button {
@@ -83,21 +85,10 @@
     }
 
     .options {
-      width: 25vw;
       display: none;
-
-      .option {
-        color: white;
-        padding: 10px 15px;
-        cursor: pointer;
-      }
     }
-    .search {
-      display: none;
-      width: 25vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .search{
+    width: 25vh;
     }
   }
 

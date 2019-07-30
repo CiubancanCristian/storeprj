@@ -65,7 +65,7 @@ class Directory extends React.Component {
       }
     };
     return (
-      <Slide {...properties}>
+      <Slide className="slide-container" {...properties}>
         <div className="each-slide">
           <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
         </div>
