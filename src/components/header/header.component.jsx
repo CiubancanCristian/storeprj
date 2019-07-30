@@ -6,11 +6,11 @@ import { createStructuredSelector } from "reselect";
 
 import { auth } from "../../firebase/firebase.utils";
 import CartIcon from "../cart-icon/cart-icon.component";
+import { ReactComponent as Farrod } from "../../assets/farrod.svg";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
 
-import Logo from "./farrod.png";
 import Magnifier from "./magnifier.png";
 
 import "./header.styles.scss";
@@ -41,7 +41,7 @@ const Header = ({ currentUser, isVisible, hidden }) => (
         )}
       </div>
       <Link className="logo-container" to="/">
-        <img className="logo" alt="logo" src={Logo} />
+        <Farrod className='logo'/>
       </Link>
       <div className="search">
         <img className="pr3" alt="search" src={Magnifier} />

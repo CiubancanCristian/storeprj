@@ -1,10 +1,12 @@
 .header {
+  font-family: "Quicksand", sans-serif;
   background-color: black;
   height: 70px;
   width: 100%;
   color: white;
   transition: top 1s;
   position: fixed;
+  font-size:14px;
   top: 0;
   right: 0;
   display: flex;
@@ -15,7 +17,7 @@
   .logo-container {
     display: flex;
     justify-content: center;
-    height: auto;
+    position: relative;
     width: 300px;
     padding: 0px 25px;
   }
