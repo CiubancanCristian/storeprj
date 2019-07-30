@@ -6,7 +6,7 @@
   color: white;
   transition: top 1s;
   position: fixed;
-  font-size:14px;
+  font-size: 14px;
   top: 0;
   right: 0;
   display: flex;
@@ -48,4 +48,60 @@
 
 .header--hidden {
   top: -100vh;
+}
+
+@media (max-width: 768px) and (max-width: 1024px) {
+  .header {
+    font-family: "Quicksand", sans-serif;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    color: white;
+    transition: top 1s;
+    position: fixed;
+    font-size: 14px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    z-index: 1;
+
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      width: 50vw;
+      padding: 0px 25px;
+    }
+
+    .menu-button {
+      width: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .options {
+      width: 25vw;
+      display: none;
+
+      .option {
+        color: white;
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    }
+    .search {
+      display: none;
+      width: 25vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .header--hidden {
+    top: -100vh;
+  }
 }

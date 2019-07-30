@@ -22,6 +22,7 @@ const Header = ({ currentUser, isVisible, hidden }) => (
         "header--hidden": !isVisible
       })}
     >
+    <div className='menu-button '>MENU</div>
       {" "}
       <div className="options">
         <Link className="option" to="/shop">
