@@ -6,7 +6,7 @@ import "./homepage.styles.scss";
 
 const HomePage = () => (
 	<div className="fullscreen-bg">
-		<video className="fullscreen-bg__video" muted loop autoPlay>
+		<video className="fullscreen-bg__video" muted loop autoPlay playsinline>
 			<source
 				src={background}
 				type="video/mp4"
