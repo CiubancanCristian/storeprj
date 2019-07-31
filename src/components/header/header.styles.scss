@@ -74,11 +74,13 @@
       display: flex;
       justify-content: center;
       position: relative;
-      width: 50vw;
+      width: 60vw;
     }
-
+    .logo {
+      width:250px;
+    }
     .menu-button {
-      width: 25vh;
+      width: 20vw;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -87,8 +89,15 @@
     .options {
       display: none;
     }
-    .search{
-    width: 25vh;
+    .search {
+      width: 20vw;
+    }
+
+    .search-item {
+      padding: 4px;
+    }
+    .lens {
+      height: 30px;
     }
   }
 

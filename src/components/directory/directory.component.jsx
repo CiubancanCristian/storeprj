@@ -65,17 +65,26 @@ class Directory extends React.Component {
       }
     };
     return (
-      <Slide className="slide-container" {...properties}>
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
+      <div>
+        <Slide className="slide-container" {...properties}>
+          <div className="each-slide">
+            <div style={{ backgroundImage: `url(${slideImages[0]})` }}></div>
+          </div>
+          <div className="each-slide">
+            <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
+          </div>
+          <div className="each-slide">
+            <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
+          </div>
+        </Slide>
+        <div className="info-section">
+          <div className="info-card"></div>
+          <div className="info-card "></div>
         </div>
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[1]})` }}></div>
+        <div className="info-section">
+          <div className="info-card-single"></div>
         </div>
-        <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[2]})` }}></div>
-        </div>
-      </Slide>
+      </div>
     );
   }
 }

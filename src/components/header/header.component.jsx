@@ -40,13 +40,13 @@ const Header = ({ currentUser, isVisible, hidden }) => (
           </Link>
         )}
       </div>
-        <Link className="logo-container" to="/">
-          <Farrod className="logo" />
-        </Link>
-        <div className="search">
-          <img className="" alt="search" src={Magnifier} />
-          <CartIcon />
-        </div>
+      <Link className="logo-container" to="/">
+        <Farrod className="logo" />
+      </Link>
+      <div className="search">
+        <img className="search-item lens" alt="search" src={Magnifier} />
+        <CartIcon className="search-item" />
+      </div>
       {hidden ? null : <CartDropdown />}
     </div>
   </div>

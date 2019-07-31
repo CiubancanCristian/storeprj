@@ -2,13 +2,37 @@
   margin: auto;
 }
 
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-card-single {
+  background-size: cover;
+  background-position-x: center;
+  height: 50vh;
+  width: 94vw;
+  margin: 1em;
+  background-image: url("http://solarey.net/wp-content/uploads/2018/01/danielle-lickey-401.jpg");
+}
+
+.info-card {
+  background-size: cover;
+  background-position-x: center;
+  height: 50vh;
+  width: 47vw;
+  margin: 1em;
+  background-image: url("http://solarey.net/wp-content/uploads/2018/01/danielle-lickey-401.jpg");
+}
+
 .each-slide > div {
   display: flex;
   align-items: center;
   justify-content: center;
   background-size: cover;
-  background-position: center;
-  height: 80vh;
+  background-position-x: center;
+  height: 84.3vh;
 }
 
 @media (max-width: 768px) and (max-width: 1024px) {
