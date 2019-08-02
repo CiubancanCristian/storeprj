@@ -6,6 +6,8 @@ import "./App.css";
 
 import HomePage from "./pages/homepage/homepage.component";
 import CheckoutPage from "./pages/checkout/checkout.component";
+
+import MenuDropdown from "./components/menu-dropdown/menu-dropdown.component";
 import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import Header from "./components/header/header.component";
@@ -49,9 +51,9 @@ class App extends React.Component {
 
   handleScroll = () => {
     const { prevScrollpos } = this.state;
-
+    console.log(this.props.menuHidden)
     const currentScrollPos = window.pageYOffset;
-    if (currentScrollPos < 1) {
+    if (currentScrollPos < 300 || this.props.menuHidden === false || this.props.hidden === false) {
       this.setState({
         visible: true
       });
@@ -69,11 +71,12 @@ class App extends React.Component {
     return (
       <div>
         <Header isVisible={this.state.visible} />
+        {this.props.menuHidden ? null :  (<MenuDropdown className="menu"/>) }
         <div className="header-mask"></div>
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
-          <Route exact path="/checkout" component={CheckoutPage} />       
+          <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
             path="/signin"
@@ -91,8 +94,10 @@ class App extends React.Component {
   }
 }
 
-const mapStateToProps = ({ user }) => ({
-  currentUser: user.currentUser
+const mapStateToProps = ({ user, menu, cart }) => ({
+  currentUser: user.currentUser,
+  menuHidden: menu.menuHidden,
+  hidden: cart.hidden
 });
 
 const mapDispatchToProps = dispatch => ({

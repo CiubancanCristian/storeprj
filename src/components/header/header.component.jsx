@@ -6,6 +6,9 @@ import { createStructuredSelector } from "reselect";
 
 import { auth } from "../../firebase/firebase.utils";
 import CartIcon from "../cart-icon/cart-icon.component";
+import MenuIcon from "../menu-icon/menu-icon.component";
+
+import Navigation from "../navigation-container/navigation-container.component";
 import { ReactComponent as Farrod } from "../../assets/farrod.svg";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
@@ -16,13 +19,18 @@ import Magnifier from "./magnifier.png";
 import "./header.styles.scss";
 
 const Header = ({ currentUser, isVisible, hidden }) => (
-  <div>
+  <div className="">
     <div
       className={classNames("header", {
         "header--hidden": !isVisible
       })}
     >
-      <div className="menu-button ">MENU</div>{" "}
+      <div className="navig">
+        <Navigation />
+      </div>
+      <div className="menu-button ">
+        <MenuIcon />
+      </div>
       <div className="options">
         <Link className="option" to="/shop">
           SHOP

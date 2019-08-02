@@ -14,7 +14,7 @@
   height: 50vh;
   width: 94vw;
   margin: 1em;
-  background-image: url("http://solarey.net/wp-content/uploads/2018/01/danielle-lickey-401.jpg");
+  background-image: url("https://www.next.co.uk/nxtcms/resource/blob/1057302/e66bf0dfa5c5cb85c8850166984ef0af/g23-menshp-data.gif");
 }
 
 .info-card {
@@ -23,7 +23,7 @@
   height: 50vh;
   width: 47vw;
   margin: 1em;
-  background-image: url("http://solarey.net/wp-content/uploads/2018/01/danielle-lickey-401.jpg");
+  background-image: url("https://www.next.co.uk/nxtcms/resource/blob/1057302/e66bf0dfa5c5cb85c8850166984ef0af/g23-menshp-data.gif");
 }
 
 .each-slide > div {
@@ -35,5 +35,5 @@
   height: 84.3vh;
 }
 
-@media (max-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 }

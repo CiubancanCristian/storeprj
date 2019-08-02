@@ -13,12 +13,20 @@ a {
 }
 
 .header-mask {
-	height: 10vh;
+	height: 100px;
+}
+
+.menu-div{
+	position: fixed;
+	z-index: 11;
 }
 
 @media (max-width: 768px) and (max-width: 1024px) {
 	body {
 		font-family: "Open Sans Condensed";
 		padding: 0px 0px;
+	}
+	.header-mask {
+		height: 70px;
 	}
 }
