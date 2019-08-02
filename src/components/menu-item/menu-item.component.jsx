@@ -14,12 +14,6 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match, dispatch }) 
       dispatch(toggleMenuOff());
     }}
   >
-    <div
-      className="background-image"
-      style={{
-        backgroundImage: `url(${imageUrl})`
-      }}
-    />
     <div className="content">
       <span className="title">{title.toUpperCase()}</span>
     </div>
