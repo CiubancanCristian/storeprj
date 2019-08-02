@@ -3,3 +3,10 @@
   font-size:12px;
   cursor:pointer;
 }
+
+@media (max-width: 768px) and (max-width: 1024px) {
+.menu-item {
+  font-size:8px;
+  border-bottom:1px solid black
+}
+}
