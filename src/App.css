@@ -1,6 +1,5 @@
 body {
 	font-family: "Open Sans Condensed";
-	padding: 20px 40px;
 }
 
 a {
@@ -19,6 +18,10 @@ a {
 .menu-div{
 	position: fixed;
 	z-index: 11;
+}
+.footer{
+	position: relative;
+	left:0px;
 }
 
 @media (max-width: 768px) and (max-width: 1024px) {

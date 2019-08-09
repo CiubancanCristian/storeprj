@@ -11,6 +11,7 @@ import MenuDropdown from "./components/menu-dropdown/menu-dropdown.component";
 import ShopPage from "./pages/shop/shop.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
 import Header from "./components/header/header.component";
+import Footer from "./components/footer/footer.component";
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
 import { setCurrentUser } from "./redux/user/user.actions";
 
@@ -89,6 +90,7 @@ class App extends React.Component {
             }
           />
         </Switch>
+        <Footer className="footer" />
       </div>
     );
   }
