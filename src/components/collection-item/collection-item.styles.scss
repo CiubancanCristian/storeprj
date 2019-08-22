@@ -21,7 +21,7 @@
     display: flex;
   }
 
-  &:hover  {
+  &:hover {
     .image {
       opacity: 0.8;
     }
@@ -46,6 +46,19 @@
     .price {
       width: 15%;
     }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+}
+
+@media only screen and (max-width: 414px) {
+  .collection-item {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    align-items: center;
+    position: relative;
   }
 }
 
