@@ -11,6 +11,10 @@ a {
 	box-sizing: border-box;
 }
 
+.body-of-the-page{
+	min-height: 93vh;
+}
+
 .header-mask {
 	height: 100px;
 }

@@ -71,6 +71,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
+      <div className="body-of-the-page">
         <Header isVisible={this.state.visible} />
         {this.props.menuHidden ? null :  (<MenuDropdown className="menu"/>) }
         <div className="header-mask"></div>
@@ -90,7 +91,8 @@ class App extends React.Component {
             }
           />
         </Switch>
-        <Footer className="footer" />
+      </div>
+      <Footer/>
       </div>
     );
   }
