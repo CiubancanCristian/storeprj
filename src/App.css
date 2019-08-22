@@ -16,7 +16,7 @@ a {
 }
 
 .header-mask {
-	height: 100px;
+	height: 112px;
 }
 
 .menu-div {
@@ -28,7 +28,7 @@ a {
 	left: 0px;
 }
 
-@media (max-width: 768px) and (max-width: 1024px) {
+@media (max-width: 768px){
 	body {
 		font-family: "Open Sans Condensed";
 		padding: 0px 0px;
